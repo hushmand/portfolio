@@ -65,9 +65,7 @@ export default function Personal() {
         transition={TRANSITION_SECTION}
         className="space-y-6"
       >
-        <div className="inline-flex items-center rounded-full border border-zinc-200 px-3 py-1 text-xs text-zinc-600">
-          <span>{PROFILE.role}</span>
-        </div>
+     
         <div className="space-y-4">
           <p className="text-zinc-600">{PROFILE.summary}</p>
         </div>

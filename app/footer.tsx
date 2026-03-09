@@ -6,11 +6,11 @@ export function Footer() {
       <div className="flex items-center justify-between">
         <a href="https://github.com/hushmand" target="_blank">
           <TextLoop className="text-xs text-zinc-500">
-            <span>© 2026 Amir.</span>
+            <span>© 2026 Amir Houshmand</span>
             <span>Mobile apps, real-time systems, and product delivery.</span>
           </TextLoop>
         </a>
-        <div className="text-xs text-zinc-400">Light mode only</div>
+        <div className="text-xs text-zinc-400"></div>
       </div>
     </footer>
   )
