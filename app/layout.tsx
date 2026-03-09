@@ -4,6 +4,7 @@ import './globals.css'
 import { Header } from './header'
 import { Footer } from './footer'
 import { WEBSITE_URL } from '@/lib/constants'
+import { EMAIL } from './data'
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -45,7 +46,23 @@ export default function RootLayout({
         className={`${geist.variable} ${geistMono.variable} bg-white tracking-tight antialiased`}
       >
         <div className="flex min-h-screen w-full flex-col font-[family-name:var(--font-inter-tight)]">
-          <div className="relative mx-auto w-full max-w-screen-sm flex-1 px-4 pt-20">
+          <div className="sticky top-0 z-50 w-full border-b border-emerald-950/8 bg-[rgb(237,249,243)]/88 backdrop-blur-xl supports-[backdrop-filter]:bg-[rgb(237,249,243)]/72">
+            <div className="mx-auto flex w-full max-w-screen-sm items-center justify-center gap-3 px-4 py-2.5 text-sm text-emerald-950/80">
+              <span className="inline-flex items-center gap-2 font-medium">
+                <span className="h-2.5 w-2.5 rounded-full bg-emerald-600 shadow-[0_0_0_4px_rgba(16,185,129,0.18)]" />
+                Available for Work
+              </span>
+              <span className="text-emerald-950/35">-</span>
+              <a
+                href={`mailto:${EMAIL}`}
+                className="underline decoration-emerald-900/35 underline-offset-4 transition hover:text-emerald-950"
+              >
+                Contact
+              </a>
+            </div>
+          </div>
+
+          <div className="relative mx-auto w-full max-w-screen-sm flex-1 px-4 pt-16">
             <Header />
             {children}
             <Footer />
