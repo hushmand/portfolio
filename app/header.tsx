@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { BASE_PATH } from '@/lib/constants'
 
 export function Header() {
   return (
@@ -6,7 +7,7 @@ export function Header() {
       <div className="flex items-center gap-4">
         <div className="relative shrink-0">
           <img
-            src="/profile.jpg"
+            src={`${BASE_PATH}/profile.jpg`}
             alt="Portrait of Amir Houshmand"
             className="h-16 w-16 rounded-full object-cover ring-1 ring-zinc-200"
           />
