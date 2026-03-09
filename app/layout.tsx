@@ -15,14 +15,15 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(WEBSITE_URL),
   alternates: {
-    canonical: '/'
+    canonical: '/',
   },
   title: {
-    default: 'Nim - Personal website template',
-    template: '%s | Nim'
+    default: 'Amir Houshmand - Senior Mobile App Developer',
+    template: '%s | Amir Houshmand',
   },
-  description:  'Nim is a free and open-source personal website template built with Next.js 15, React 19 and Motion-Primitives.',
-};
+  description:
+    'Senior Mobile App Developer specializing in Flutter, Android, iOS, WebRTC, blockchain, VoIP, BLE, and agentic AI systems.',
+}
 
 const geist = Geist({
   variable: '--font-geist',

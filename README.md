@@ -1,15 +1,13 @@
-<img src="/public/cover.jpg" alt="Cover image representing Nim, a personal website template" width="100%" />
+<img src="/public/cover.jpg" alt="Cover image for Amir Houshmand portfolio" width="100%" />
 
-Nim is a free and open-source personal website template built with Next.js 15, React 19, Tailwind CSS v4, and Motion. Designed for developers, designers, and founders, it combines minimalism with delightful animated components powered by [Motion-Primitives](https://motion-primitives.com).
-
-Live demo: [https://nim-fawn.vercel.app](https://nim-fawn.vercel.app)
+This repository contains Amir Houshmand's personal portfolio site, built with Next.js 15, React 19, Tailwind CSS v4, and Motion.
 
 ## Features
 
-- Minimal one-page portfolio layout.
-- Blog support with MDX.
+- One-page portfolio layout.
+- Experience, skills, and project highlights.
 - Responsive and accessible design.
-- Easy to use
+- Static export ready for GitHub Pages.
 - [Motion-Primitives](https://motion-primitives.com) for animated components.
 
 ## Getting Started
@@ -24,10 +22,6 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-## Contributing
-
-Contributions are welcome! Feel free to open issues or submit pull requests to improve Nim.
 
 ## Deployment
 
@@ -55,4 +49,4 @@ Then open `http://localhost:4321`.
 
 ## About
 
-Nim is designed to make personal branding effortless and beautiful. If you enjoy it, consider sharing it and exploring [Motion-Primitives Pro](https://pro.motion-primitives.com/).
+The site is configured as a static portfolio and can be deployed to GitHub Pages or any static hosting provider that supports Next.js export output.

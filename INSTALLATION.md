@@ -1,4 +1,4 @@
-# Nim - Installation Guide
+# Portfolio Installation Guide
 
 ## Prerequisites
 
@@ -26,7 +26,7 @@
    npm run dev
    ```
 
-4. **Update the template data**
+4. **Update the portfolio data**
 
    Update the template data in the `app/data.ts` file.
 
@@ -44,37 +44,16 @@
    ...
    ```
 
-5. **Add your blog posts**
-
-Create a new .mdx file for each blog post inside the app/blog folder. For example:
-app/blog/your-article-slug/page.mdx.
-
-Example blog post structure in .mdx:
-
-```mdx
-# Your Article Title
-
-Introduction
-
-Your content here...
-
-## Code Examples
-
-// Example code block here...
-```
-
-**Note:** You can use all MDX features, including React components, in your blog posts.
-
-6. **Project Structure**
+5. **Project Structure**
 
 For a better understanding of the Next.js project structure, refer to the [Next.js](https://nextjs.org/docs/app/getting-started/project-structure) documentation.
 
-7. **Additional Features**
+6. **Additional Features**
 
 Want to add more animated components?
 Check out [Motion-Primitives](https://motion-primitives.com/) for additional animation components and templates. If you want something else DM on [X](https://x.com/Ibelick).
 
-8.  **Deployment**
+7. **Deployment**
 
 You can deploy your site to any hosting platform that supports Next.js. For the easiest deployment experience, consider using Vercel:
 

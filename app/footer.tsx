@@ -73,7 +73,7 @@ export function Footer() {
         <a href="https://github.com/hushmand" target="_blank">
           <TextLoop className="text-xs text-zinc-500">
             <span>© 2026 Amir.</span>
-            <span>Built with Motion-Primitives.</span>
+            <span>Mobile apps, real-time systems, and product delivery.</span>
           </TextLoop>
         </a>
         <div className="text-xs text-zinc-400">
