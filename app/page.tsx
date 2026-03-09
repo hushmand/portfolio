@@ -44,7 +44,7 @@ function MagneticSocialLink({
         href={link}
         target="_blank"
         rel="noreferrer"
-        className="group relative inline-flex shrink-0 items-center gap-[1px] rounded-full bg-zinc-100 px-2.5 py-1 text-sm text-black transition-colors duration-200 hover:bg-zinc-950 hover:text-zinc-50 dark:bg-zinc-800 dark:text-zinc-100 dark:hover:bg-zinc-700"
+        className="group relative inline-flex shrink-0 items-center gap-[1px] rounded-full bg-zinc-100 px-2.5 py-1 text-sm text-black transition-colors duration-200 hover:bg-zinc-950 hover:text-zinc-50"
       >
         {children}
       </a>
@@ -65,17 +65,11 @@ export default function Personal() {
         transition={TRANSITION_SECTION}
         className="space-y-6"
       >
-        <div className="inline-flex items-center gap-2 rounded-full border border-zinc-200 px-3 py-1 text-xs text-zinc-600 dark:border-zinc-800 dark:text-zinc-300">
+        <div className="inline-flex items-center rounded-full border border-zinc-200 px-3 py-1 text-xs text-zinc-600">
           <span>{PROFILE.role}</span>
-          <span className="text-zinc-300 dark:text-zinc-700">/</span>
-          <span>Birth {PROFILE.birthYear}</span>
         </div>
         <div className="space-y-4">
-          <h1 className="max-w-xl text-3xl font-medium tracking-tight text-zinc-950 dark:text-zinc-50">
-            I design and ship mobile products that balance native depth, product
-            speed, and long-term maintainability.
-          </h1>
-          <p className="text-zinc-600 dark:text-zinc-400">{PROFILE.summary}</p>
+          <p className="text-zinc-600">{PROFILE.summary}</p>
         </div>
       </motion.section>
 
@@ -88,7 +82,7 @@ export default function Personal() {
           {SKILLS.map((skill) => (
             <span
               key={skill}
-              className="rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1.5 text-sm text-zinc-700 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-300"
+              className="rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1.5 text-sm text-zinc-700"
             >
               {skill}
             </span>
@@ -105,10 +99,10 @@ export default function Personal() {
           {PROJECTS.map((project) => (
             <article
               key={project.id}
-              className="rounded-2xl border border-zinc-200 bg-white p-5 dark:border-zinc-800 dark:bg-zinc-950"
+              className="rounded-2xl border border-zinc-200 bg-white p-5"
             >
               <div className="mb-3 flex items-start justify-between gap-4">
-                <h4 className="text-base font-medium text-zinc-900 dark:text-zinc-50">
+                <h4 className="text-base font-medium text-zinc-900">
                   {project.name}
                 </h4>
                 {project.link ? (
@@ -116,13 +110,13 @@ export default function Personal() {
                     href={project.link}
                     target="_blank"
                     rel="noreferrer"
-                    className="shrink-0 text-sm text-zinc-500 underline decoration-zinc-300 underline-offset-4 dark:text-zinc-400 dark:decoration-zinc-700"
+                    className="shrink-0 text-sm text-zinc-500 underline decoration-zinc-300 underline-offset-4"
                   >
                     {project.linkLabel || 'Open'}
                   </a>
                 ) : null}
               </div>
-              <p className="text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+              <p className="text-sm leading-6 text-zinc-600">
                 {project.description}
               </p>
             </article>
@@ -139,27 +133,23 @@ export default function Personal() {
           {WORK_EXPERIENCE.map((job) => (
             <div
               key={job.id}
-              className="relative overflow-hidden rounded-2xl bg-zinc-300/30 p-[1px] dark:bg-zinc-600/30"
+              className="relative overflow-hidden rounded-2xl bg-zinc-300/30 p-[1px]"
             >
               <Spotlight
-                className="from-zinc-900 via-zinc-800 to-zinc-700 blur-2xl dark:from-zinc-100 dark:via-zinc-200 dark:to-zinc-50"
+                className="from-zinc-900 via-zinc-800 to-zinc-700 blur-2xl"
                 size={64}
               />
-              <div className="relative rounded-[15px] bg-white p-5 dark:bg-zinc-950">
+              <div className="relative rounded-[15px] bg-white p-5">
                 <div className="mb-3 flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
                   <div>
-                    <h4 className="font-normal dark:text-zinc-100">
-                      {job.title}
-                    </h4>
-                    <p className="text-zinc-500 dark:text-zinc-400">
-                      {job.company}
-                    </p>
+                    <h4 className="font-normal text-zinc-900">{job.title}</h4>
+                    <p className="text-zinc-500">{job.company}</p>
                   </div>
-                  <p className="text-sm text-zinc-600 dark:text-zinc-400">
+                  <p className="text-sm text-zinc-600">
                     {job.start} - {job.end}
                   </p>
                 </div>
-                <ul className="space-y-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                <ul className="space-y-2 text-sm leading-6 text-zinc-600">
                   {job.description.map((item) => (
                     <li key={item}>- {item}</li>
                   ))}
@@ -175,10 +165,10 @@ export default function Personal() {
         transition={TRANSITION_SECTION}
       >
         <h3 className="mb-5 text-lg font-medium">Connect</h3>
-        <p className="mb-5 text-zinc-600 dark:text-zinc-400">
+        <p className="mb-5 text-zinc-600">
           Available for freelance engagements, long-term collaboration, and
           end-to-end mobile product development. Reach me at{' '}
-          <a className="underline dark:text-zinc-300" href={`mailto:${EMAIL}`}>
+          <a className="underline" href={`mailto:${EMAIL}`}>
             {EMAIL}
           </a>
           .
