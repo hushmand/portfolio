@@ -31,6 +31,22 @@ const TRANSITION_SECTION = {
   duration: 0.3,
 }
 
+const SKILL_GROUPS = SKILLS.map((skill) => {
+  const separatorIndex = skill.indexOf(':')
+
+  if (separatorIndex === -1) {
+    return {
+      title: 'Skill',
+      items: skill,
+    }
+  }
+
+  return {
+    title: skill.slice(0, separatorIndex),
+    items: skill.slice(separatorIndex + 1).trim(),
+  }
+})
+
 function MagneticSocialLink({
   children,
   link,
@@ -65,7 +81,6 @@ export default function Personal() {
         transition={TRANSITION_SECTION}
         className="space-y-6"
       >
-     
         <div className="space-y-4">
           <p className="text-zinc-600">{PROFILE.summary}</p>
         </div>
@@ -76,14 +91,20 @@ export default function Personal() {
         transition={TRANSITION_SECTION}
       >
         <h3 className="mb-5 text-lg font-medium">Skills</h3>
-        <div className="flex flex-wrap gap-2">
-          {SKILLS.map((skill) => (
-            <span
-              key={skill}
-              className="rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1.5 text-sm text-zinc-700"
+        <div className="space-y-3">
+          {SKILL_GROUPS.map((skill) => (
+            <article
+              key={skill.title}
+              className="rounded-2xl border border-zinc-200 bg-white p-5"
             >
-              {skill}
-            </span>
+              <div className="mb-2 flex items-center gap-2">
+                <span className="h-2 w-2 rounded-full bg-emerald-600" />
+                <h4 className="text-base font-medium text-zinc-900">
+                  {skill.title}
+                </h4>
+              </div>
+              <p className="text-sm leading-6 text-zinc-700">{skill.items}</p>
+            </article>
           ))}
         </div>
       </motion.section>

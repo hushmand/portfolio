@@ -37,24 +37,17 @@ export const PROFILE: Profile = {
 }
 
 export const SKILLS: string[] = [
-  'Flutter',
-  'Android (Kotlin, Java)',
-  'iOS (Swift)',
-  'WebRTC, video and sound streaming',
-  'Firebase systems',
-  'Socket.io and WebSocket',
-  'CallKit, Silent PushKit, Background Fetch iOS',
-  'Git, GitHub Flow and CI/CD',
-  'VoIP apps (Linphone and Zoiper)',
-  'OpenStreetMap',
-  'TensorFlow and OpenCV',
-  'ARKit',
-  'gRPC and GraphQL',
-  'Communication with BLE devices',
-  'Blockchain, Wallet Core and Web3',
-  'Clean Architecture and TDD',
-  'Hybrid apps',
-  'Agentic AI systems',
+  'Languages: Dart, Go, JavaScript, TypeScript, SQL, Bash, Protocol Buffers',
+  'Mobile & Cross-Platform: Flutter, Android, iOS, Flutter Web, desktop-oriented Flutter integrations',
+  'Flutter Ecosystem: GetX, Provider, BLoC, flutter_bloc, Riverpod, GetIt, go_router, build_runner, json_serializable, sqflite, ObjectBox, shared_preferences, flutter_secure_storage',
+  'Backend: Go, Fiber, REST APIs, Gorilla WebSocket, PGX, GORM, JWT, validation, structured logging',
+  'Real-Time & Communication: WebSocket, gRPC, gRPC-web, WebRTC, streaming systems, chat systems',
+  'Telecom / PBX: Asterisk, AMI, ARI, SIP-related workflows, click-to-call, queue monitoring, PBX reporting',
+  'Databases: PostgreSQL, MySQL, MongoDB, Cassandra, SQLite, ObjectBox, Redis',
+  'Infra / Cloud: HAProxy, reverse proxy, TLS, HTTP/2, CORS, Docker, AWS S3, Firebase, FCM, APNs',
+  'Mobile Integrations: Bluetooth/BLE, camera, maps, geolocation, webview, push notifications, local notifications, biometrics, file/media handling, audio/video',
+  'AI / ML: TensorFlow Lite, on-device inference, OpenAI-related integrations, whisper.cpp-related experimentation',
+  'Fintech / Security: web3dart, secure storage, wallet/key management, biometric authentication, encryption-related workflows',
 ]
 
 export const PROJECTS: Project[] = [
