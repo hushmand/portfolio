@@ -44,20 +44,26 @@ export const SKILLS: string[] = [
   'Real-Time & Communication: WebSocket, gRPC, gRPC-web, WebRTC, streaming systems, chat systems',
   'Telecom / PBX: Asterisk, AMI, ARI, SIP-related workflows, click-to-call, queue monitoring, PBX reporting',
   'Databases: PostgreSQL, MySQL, MongoDB, Cassandra, SQLite, ObjectBox, Redis',
-  'Infra / Cloud: HAProxy, reverse proxy, TLS, HTTP/2, CORS, Docker, AWS S3, Firebase, FCM, APNs',
+  'Infra / Cloud: HAProxy, Ansible, reverse proxy, TLS, HTTP/2, CORS, Docker, AWS S3, Firebase, FCM, APNs',
   'Mobile Integrations: Bluetooth/BLE, camera, maps, geolocation, webview, push notifications, local notifications, biometrics, file/media handling, audio/video',
-  'AI / ML: TensorFlow Lite, on-device inference, OpenAI-related integrations, whisper.cpp-related experimentation',
+  'AI & Emerging Tech: Agentic AI systems, local LLM integrations, OpenAI API integrations, on-device AI experimentation, whisper.cpp-related exploration',
   'Fintech / Security: web3dart, secure storage, wallet/key management, biometric authentication, encryption-related workflows',
 ]
 
 export const PROJECTS: Project[] = [
   {
+    name: 'OPRIX',
+    description:
+      'A full-stack PBX and business communications platform with a Flutter client and a Go backend built around Asterisk, gRPC, WebSocket, admin APIs, and reporting services. It supports real-time communication workflows, operational dashboards, and user-facing features across telephony, messaging, and backend service orchestration.',
+    id: 'project8',
+  },
+  {
     name: 'CFBTEL SIP-based',
     description:
-      'A cross-platform SIP and WebRTC communications product for voice and video calling, delivered with Flutter and native integrations across Android, iOS, and macOS, including CallKit, silent push notifications, and custom telephony plugins.',
+      'A full-stack VoIP softphone solution with a Flutter-based client for voice calling, chat, meetings, and cross-platform communication, backed by telephony services integrated with Asterisk, gRPC, and WebSocket infrastructure. It delivers end-to-end VoIP workflows across call handling, signaling, messaging, and real-time communication services.',
     link: 'https://apps.apple.com/us/app/cfbtel/id1597869627',
     linkLabel: 'App Store',
-    id: 'project1',
+    id: 'project9',
   },
   {
     name: 'Crypto Wallet',
@@ -102,28 +108,41 @@ export const PROJECTS: Project[] = [
 export const WORK_EXPERIENCE: WorkExperience[] = [
   {
     company: 'CFBTEL Co.',
-    title: 'Senior Mobile Developer',
+    title: 'Senior Mobile / Full-Stack Developer',
     start: '2021',
     end: '2025',
     description: [
-      'Implemented voice calls using Linphone SDK in Swift and Kotlin and integrated them with Flutter.',
-      'Built iOS calling workflows with Silent Push notifications and CallKit.',
-      'Implemented WebSocket-based messaging and real-time user call state handling.',
-      'Developed WebRTC video calling and shipped Android, iOS, macOS, and Windows outputs.',
-      'Supported Scrum delivery across sprint planning, backlog grooming, reviews, and retrospectives.',
+      'Designed and delivered cross-platform communication solutions across Flutter, Swift, and Kotlin, including voice calling integrations with Linphone SDK.',
+      'Implemented iOS VoIP calling workflows using Silent Push notifications and CallKit.',
+      'Built real-time messaging and user call-state features using WebSocket-based architectures across client and backend layers.',
+      'Developed and shipped WebRTC-based video calling features for Android, iOS, macOS, and Windows.',
+      'Contributed to backend service development for communication workflows, reporting systems, and operational tools.',
+      'Worked on Oprix and reporting platforms end-to-end, covering mobile integration, backend implementation, real-time data handling, and reporting-related services.',
       'Architected an agent-based AI reporting engine for natural-language-to-SQL automation, secure query execution, and structured analytical summaries.',
+      'Participated in Scrum ceremonies including sprint planning, backlog refinement, reviews, and retrospectives.',
     ],
     id: 'work1',
+  },
+  {
+    company: 'Hitech Innovation Center',
+    title: 'Senior Mobile / Full-Stack Developer',
+    start: '2021',
+    end: '2021',
+    description: [
+      'A suite of full-stack IoT and smart-device products built with Flutter on the frontend and backend-integrated service architectures for data exchange, monitoring, and operational workflows.',
+      'The projects cover mobile applications for health and device-connected scenarios, with capabilities including BLE/Bluetooth, sensors, camera integration, local/offline storage, notifications, API communication, and embedded ML features for hardware-assisted user experiences.'
+    ],
+    id: 'work2',
   },
   {
     company: 'Felorida Co.',
     title: 'Mobile Developer',
     start: '2020',
-    end: '2021',
+    end: '2020',
     description: [
       'Developed a social network application for businesses on Android and iOS.',
     ],
-    id: 'work2',
+    id: 'work3',
   },
   {
     company: 'Hitech Innovation Center',
@@ -135,7 +154,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
       'Used MQTT for reliable device data transfer.',
       'Integrated TensorFlow models into production workflows.',
     ],
-    id: 'work3',
+    id: 'work4',
   },
   {
     company: 'Taxi Online',
@@ -146,7 +165,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
       'Built an online taxi SDK platform for deployment across partner companies.',
       'Delivered native Android and iOS applications with OpenStreetMap integration.',
     ],
-    id: 'work4',
+    id: 'work5',
   },
   {
     company: 'Freelancer',
@@ -159,7 +178,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
       'Adopted modern frameworks and architectures aligned with project requirements.',
       'Documented development methodologies for future engineering and support teams.',
     ],
-    id: 'work5',
+    id: 'work6',
   },
 ]
 

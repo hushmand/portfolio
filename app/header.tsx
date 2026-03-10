@@ -25,7 +25,7 @@ export function Header() {
       <div className="text-[clamp(1rem,2vw,1.4rem)] leading-[1.2] tracking-tight text-stone-400">
         <p>
           I was <span className="text-zinc-900">10x developer</span> before AI:
-          <span className="text-zinc-900"> built 80+ mobile apps.</span>
+          <span className="text-zinc-900"> built 80+ apps.</span>
         </p>
         <p className="mt-2">
           Now with AI? I&apos;m <span className="text-zinc-900">100x.</span>

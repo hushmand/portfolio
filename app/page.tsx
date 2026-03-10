@@ -31,6 +31,21 @@ const TRANSITION_SECTION = {
   duration: 0.3,
 }
 
+const SKILL_EMOJIS: Record<string, string> = {
+  Languages: '⌨️',
+  'Mobile & Cross-Platform': '📱',
+  'Flutter Ecosystem': '🧩',
+  Backend: '🛠️',
+  'Real-Time & Communication': '🔄',
+  'Telecom / PBX': '📞',
+  Databases: '🗄️',
+  'Infra / Cloud': '☁️',
+  'Mobile Integrations': '🔌',
+  'AI / ML': '🤖',
+  'Fintech / Security': '🔐',
+  Skill: '✨',
+}
+
 const SKILL_GROUPS = SKILLS.map((skill) => {
   const separatorIndex = skill.indexOf(':')
 
@@ -98,7 +113,9 @@ export default function Personal() {
               className="rounded-2xl border border-zinc-200 bg-white p-5"
             >
               <div className="mb-2 flex items-center gap-2">
-                <span className="h-2 w-2 rounded-full bg-emerald-600" />
+                <span className="text-base leading-none">
+                  {SKILL_EMOJIS[skill.title] ?? '✨'}
+                </span>
                 <h4 className="text-base font-medium text-zinc-900">
                   {skill.title}
                 </h4>
