@@ -18,7 +18,7 @@ export function Header() {
           <Link href="/" className="font-medium text-black">
             Amir Houshmand
           </Link>
-          <p className="text-sm text-zinc-500">Senior Mobile App Developer</p>
+          <p className="text-sm text-zinc-500">Senior Mobile / Full-Stack Software Engineer</p>
         </div>
       </div>
 

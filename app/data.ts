@@ -30,10 +30,10 @@ export type SocialLink = {
 
 export const PROFILE: Profile = {
   name: 'Amir Houshmand',
-  role: 'Senior Mobile App Developer',
+  role: 'Senior Mobile / Full-Stack Software Engineer',
   birthYear: '1996',
   summary:
-    'Senior Mobile Developer with 12+ years of experience delivering production-grade applications across Flutter, Android, and iOS. My background spans VoIP, WebRTC, blockchain, BLE, mapping, and real-time systems, with shipped products ranging from decentralized messengers and crypto wallets to taxi platforms, business social apps, and communication tools.',
+    'Full-stack, product-oriented software engineer with 12+ years of experience, primarily focused on mobile development with Flutter, Android, and iOS. Experienced in building end-to-end products across mobile, backend, web dashboards, and integration layers, with strong hands-on work in Go, WebSocket, gRPC, WebRTC, telecom/PBX systems, and cloud-connected services. Proven background in communication apps, fintech and wallet flows, operational tools, device integrations, and production-focused software delivery.',
 }
 
 export const SKILLS: string[] = [
